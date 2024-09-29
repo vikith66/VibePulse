@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Cards</title>
+  <style>body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .card {
+    width: 200px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: lightgray;
+    animation: move-horizontal 5s linear infinite;
+  }
+  
+  .card-1 { background-color: #ff6666; }
+  .card-2 { background-color: #66b3ff; }
+  .card-3 { background-color: #66ff66; }
+  .card-4 { background-color: #ffcc66; }
+  .card-5 { background-color: #cc66ff; }
+  
+  /* Horizontal movement from left to right */
+  @keyframes move-horizontal {
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(100vw); }
+  }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card card-1"></div>
+    <div class="card card-2"></div>
+    <div class="card card-3"></div>
+    <div class="card card-4"></div>
+    <div class="card card-5"></div>
+  </div>
+</body>
+</html>

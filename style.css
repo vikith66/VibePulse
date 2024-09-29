@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@font-face {
+    font-family: 'MusticaPro';
+    src: url('./fonts/MusticaPro-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Belfast';
+    src: url('./fonts/Belfast.ttf') format('truetype');
+}
+
+body {
+    background-color: #060318;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.Ellipse {
+    position: absolute;
+    top: -152px;
+    left: -546px;
+    width: 930px;
+    z-index: -1;
+}
+
+.Ellipse2 {
+    position: absolute;
+    top: 410px;
+    left: 1200px;
+    width: 930px;
+    z-index: -1;
+}
+
+.Ellipse3 {
+    position: absolute;
+    top: 85px;
+    left: 680px;
+    width: 330px;
+    z-index: -1;
+    opacity: 70%;
+}
+
+.logo {
+    position: absolute;
+    width: 240px;
+    top: -28px;
+    left: 28px;
+}
+
+.title {
+    position: absolute;
+    font-size: 86px;
+    font-family: 'Belfast';
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    width: 600px;
+    line-height: 95px;
+    margin-left: 70px;
+    margin-top: 220px;
+}
+
+.subtitle {
+    position: absolute;
+    display: inline-block;
+    font-family: 'poppins';
+    width: 600px;
+    color: white;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 560px;
+}
+
+.description {
+    background: linear-gradient(to right, #5E2BCD, #0FB7F5);
+    ;
+    width: 530px;
+    height: 130px;
+    position: relative;
+    top: 666px;
+    left: 71px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.description div {
+    margin-top: -19px;
+}
+
+.activeusers {
+    position: relative;
+    top: 700px;
+    left: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.activeusers img {
+    width: 150px;
+}
+
+.activeusers p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Belfast';
+}
+
+.numbers {
+    font-family: 'Belfast';
+    font-size: 45px;
+    color: aliceblue;
+    margin: 0;
+}
+
+.list {
+    font-family: 'poppins';
+    font-size: 20px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 90px;
+    height: 120px;
+}
+
+nav ul li {
+    color: aliceblue;
+    font-family: 'MusticaPro';
+    font-size: 22px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img {
+    padding-right: 10px;
+}
+
+.glassBox {
+    width: 600px;
+    height: 630px;
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.058), rgba(255, 0, 0, 0.042));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px -20px 30px rgba(9, 84, 248, 0.363);
+    border: 1px solid rgba(0, 119, 255, 0.712);
+    overflow: hidden;
+}
+
+.glassBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search {
+    background: linear-gradient(to right, #5E2BCD, #0FB7F5);
+    color: white;
+    font-family: "Poppins";
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 65px;
+}
+
+.midlogo {
+    position: relative;
+    top: 620px;
+    display: flex;
+    justify-content: center;
+}
+
+.midlogo img {
+    width: 350px;
+}
+
+/*SLIDING COROUSEL REPEAT ANIMATION*/
+.logos {
+    padding: 30px 0;
+    opacity: 0.9;
+    background: linear-gradient(to right,
+            rgba(94, 43, 205, 0.066)0%,
+            rgba(94, 43, 205, 1) 15%,
+            rgba(15, 183, 245, 1) 85%,
+            rgba(15, 184, 245, 0.283) 100%);
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 590px;
+    overflow-x: hidden;
+}
+
+.iconscroll-text {
+    display: inline-block;
+    position: relative;
+    font-size: 22px;
+    font-family: 'Michroma', sans-serif;
+    color: #ffffff;
+    margin-right: 80px;
+    margin-left: 30px;
+}
+
+.iconscroll {
+    display: inline-block;
+    width: 35px;
+    /*ICON SIZE*/
+    height: 35px;
+    margin-right: -13%;
+    background-image: url('/Figma Elements/star.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 40s slide infinite linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.popular {
+    position: relative;
+    top: 620px;
+    font-family: "Belfast";
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.popContent {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: absolute;
+    top: 1520px;
+    transform: translateY(-50%) translateX(50%);
+    animation: 40s singers linear infinite;
+    animation-delay: -40s;
+}
+
+.animate {
+    display: inline-block;
+}
+
+.animate .amim {
+    transform: translateX(100%);
+}
+
+@keyframes singers {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.card {
+    height: 385px;
+    width: 286px;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+}
+
+.Red {
+    background: linear-gradient(to top right, #494949, #919191);
+}
+
+.Pink {
+    background: linear-gradient(to bottom right, #e7228b, #ffe1f1);
+}
+
+.Purple {
+    background: linear-gradient(to bottom right, #9906f5, #000000);
+}
+
+.Blue {
+    background: linear-gradient(to bottom right, #090043, #4e4874);
+}
+
+.orange {
+    background: linear-gradient(to bottom right, #ffb157fa, #000000);
+}
+
+.Brown {
+    background: linear-gradient(to bottom right, #815645, #482f26);
+}
+
+.glass {
+    background: linear-gradient(to right, #5E2BCD, #0FB7F5);
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    height: 99px;
+    width: 100%;
+    border-radius: 0 0 32px 32px;
+    display: inline-block;
+}
+
+
+
+
+.wrapper {
+    margin-top: 2rem;
+    margin-inline: auto;
+    height: 100px;
+    position: relative;
+    top: 2000px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+
+
+.itemLeft {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #0FB7F5;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #5e2bcd71, #0fb8f565);
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.itemLeft {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.itemLeft1 {
+    left: max(calc(180px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.second-wrapper {
+    position: relative;
+    top:50px;
+    left: 10px;
+    margin: 0;
+}
