@@ -226,7 +226,6 @@ nav ul li img {
 .iconscroll {
     display: inline-block;
     width: 35px;
-    /*ICON SIZE*/
     height: 35px;
     margin-right: -13%;
     background-image: url('/Figma Elements/star.png');
@@ -265,74 +264,86 @@ nav ul li img {
     text-align: center;
 }
 
-.popContent {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    position: absolute;
-    top: 1520px;
-    transform: translateY(-50%) translateX(50%);
-    animation: 40s singers linear infinite;
-    animation-delay: -40s;
-}
-
-.animate {
-    display: inline-block;
-}
-
-.animate .amim {
-    transform: translateX(100%);
-}
-
-@keyframes singers {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.card {
+/*Singers Sliding Cards*/
+.Singers {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 1536px;
+    height: 500px;
+    position: relative;
+    top: 650px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0));
+  }
+  .card{
     height: 385px;
     width: 286px;
+    background-color: #e11d48;
     border-radius: 32px;
-    position: relative;
-    overflow: hidden;
-}
-
-.card img {
-    object-fit: cover;
     position: absolute;
-    width: 100%;
-}
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+  }
+  .i1 img {
+      position: absolute;
+      top: -18px;
+      left: -58px;
+  }
+  .i2 img{
+    position: absolute;
+    top: 23px;
+    left: -154px;
+  }
 
-.Red {
+  .i3 img{
+    position: absolute;
+    top: -94px;
+    left: 0;
+  }
+
+  .i5 img{
+    position: absolute;
+    top: 23px;
+    left: -37px;
+  }
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  .i1 {
     background: linear-gradient(to top right, #494949, #919191);
-}
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
+  }
 
-.Pink {
-    background: linear-gradient(to bottom right, #e7228b, #ffe1f1);
-}
+  .i2 {
+    background: linear-gradient(to bottom right, #9c2f6f, #000000);
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
+  }
 
-.Purple {
+  .i3 {
     background: linear-gradient(to bottom right, #9906f5, #000000);
-}
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
+  }
 
-.Blue {
+  .i4 {
     background: linear-gradient(to bottom right, #090043, #4e4874);
-}
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);
+  }
 
-.orange {
-    background: linear-gradient(to bottom right, #ffb157fa, #000000);
-}
-
-.Brown {
+  .i5 {
     background: linear-gradient(to bottom right, #815645, #482f26);
-}
-
-.glass {
+    animation-delay: calc(30s / 5 * (5 - 5) * -1);
+  }
+  .glass {
     background: linear-gradient(to right, #5E2BCD, #0FB7F5);
     position: absolute;
     bottom: 0;
@@ -341,91 +352,12 @@ nav ul li img {
     width: 100%;
     border-radius: 0 0 32px 32px;
     display: inline-block;
-}
-
-
-
-
-.wrapper {
-    margin-top: 2rem;
-    margin-inline: auto;
-    height: 100px;
-    position: relative;
-    top: 2000px;
-    overflow: hidden;
-    mask-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 10%,
-            rgba(0, 0, 0, 1) 90%,
-            rgba(0, 0, 0, 0));
-}
-
-@keyframes scrollLeft {
-    to {
-        left: -200px;
-    }
-}
-
-
-
-.itemLeft {
-    width: 200px;
-    height: 100px;
-    border: 2px solid #0FB7F5;
-    box-sizing: border-box;
-    background: linear-gradient(to right, #5e2bcd71, #0fb8f565);
-    border-radius: 6px;
+  }
+  .singername{
+    font-family: "Belfast";
+    font-size: 25px;
     position: absolute;
-    animation-timing-function: linear;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-}
-
-.itemLeft {
-    left: max(calc(200px * 8), 100%);
-    animation-name: scrollLeft;
-}
-
-.itemLeft1 {
-    left: max(calc(180px * 8), 100%);
-    animation-name: scrollLeft;
-}
-
-.item1 {
-    animation-delay: calc(30s / 8 * (8 - 1) * -1);
-}
-
-.item2 {
-    animation-delay: calc(30s / 8 * (8 - 2) * -1);
-}
-
-.item3 {
-    animation-delay: calc(30s / 8 * (8 - 3) * -1);
-}
-
-.item4 {
-    animation-delay: calc(30s / 8 * (8 - 4) * -1);
-}
-
-.item5 {
-    animation-delay: calc(30s / 8 * (8 - 5) * -1);
-}
-
-.item6 {
-    animation-delay: calc(30s / 8 * (8 - 6) * -1);
-}
-
-.item7 {
-    animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
-
-.item8 {
-    animation-delay: calc(30s / 8 * (8 - 8) * -1);
-}
-
-.second-wrapper {
-    position: relative;
-    top:50px;
-    left: 10px;
-    margin: 0;
-}
+    top: -15px;
+    left: 20px;
+    color: azure;
+  }
